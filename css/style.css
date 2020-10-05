@@ -1,0 +1,60 @@
+.body{
+  background-color: #c5c5c5;
+  color: #000;
+}
+.content{
+  width: 600px;
+  margin: 5% auto;
+  display: flex;
+  position: relative;
+  flex-direction:column ;
+  align-items: center;
+}
+form{
+  margin-bottom: 30px;
+}
+.inputs{
+  display: flex;
+  position: relative;
+  flex-direction:column ;
+  margin-bottom: 10px;
+}
+.botaoCriar{
+  background-color: rgb(255, 144, 53);
+  border-radius: 5px;
+  border-color: rgb(255, 144, 53);
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.botaoEditar{
+  background-color: rgb(38, 179, 38);
+  border-radius: 5px;
+  border-color:  rgb(38, 179, 38);
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.botaoExcluir{
+  background-color: rgb(235, 35, 35);;
+  border-radius: 5px;
+  border-color: rgb(235, 35, 35);
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.table{
+  border: 1px;
+}
+td{
+  text-align: center;
+}

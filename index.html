@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto CRUD JS</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body class="body" onload="inicio()" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Projeto CRUD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Cadastro</a>
+                <a class="nav-link active" href="viagens.html">Viagens</a>
+              </div>
+            </div>
+        </nav>
+
+        </div>
+        <div class="content">
+            <h1>Cadastro de Viagens</h1>
+            <form class="form">
+                <div class="inputs">
+                    <label for="lugar">Destino:</label>
+                    <input type="text" class="form-control" id="lugar">
+                </div>
+
+                <div class="inputs">
+                    <label for="pessoas">Qtd de Pessoas:</label>
+                    <input type="number" class="form-control" id="pessoas">
+                </div>
+
+                <div class="inputs">
+                    <label for="valor">Valor da Viagem:</label>
+                    <input type="number" class="form-control" id="valor">
+                </div>
+
+                <div class="inputs">
+                    <label for="dias">Qts Dias:</label>
+                    <input type="number" class="form-control" id="dias">
+                </div>
+    
+                <input type="button" onclick="CadastrarViagem()" id="btnCriar" class="botaoCriar" value="Criar">
+                <input type="button" style="display: none;" id="btnEditar" onclick="EditarViagem()" class="botaoEditar" value="Editar">
+            </form>
+    
+            <table border="1" class="table" id="tabela">
+                <thead>
+                    <tr>
+                        <td>Lugar</td>
+                        <td>Qtd pessoas</td>
+                        <td>Valor</td>
+                        <td>Dias</td>
+                        <td>Editar</td>
+                        <td>Excluir</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </body>
+</html>
